@@ -183,8 +183,8 @@
 
 
 
-let data = [90,60,40,70,10,80,20,30,50];
-console.log(data);
+// let data = [90,60,40,70,10,80,20,30,50];
+// console.log(data);
 
 // data.push(200); at the end
 
@@ -201,5 +201,20 @@ console.log(data);
 
 // data.sort();
 
-data.reverse();
-console.log(data);
+// data.reverse();
+
+
+// console.log(data);
+
+
+let data=[10,200,300,210,1,100,5];
+let a=data[0];
+for(let i=1;i<data.length;i++)
+{
+    if(data[i]<a)
+    {
+        m=a;
+        a=data[i];
+        data[i]=a;
+    }
+}
