@@ -209,12 +209,16 @@
 
 let data=[10,200,300,210,1,100,5];
 let a=data[0];
-for(let i=1;i<data.length;i++)
+for(let i=0;i<data.length;i++)
 {
-    if(data[i]<a)
+    for(let j=1;j<data.length;j++)
     {
-        m=a;
-        a=data[i];
-        data[i]=a;
+        if(data[j]<a)
+        {
+            let m=a;
+            a=data[j];
+            data[j]=data[i];
+        }
     }
 }
+console.log(data);

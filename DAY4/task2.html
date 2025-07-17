@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="bulb" src="https://www.freeiconspng.com/uploads/bulb-off-icon-14.jpg" width="600px" height="600px">
+    <br><br>
+    <button onClick="on()">On</button>
+    <button onClick="off()">Off</button>
+    <button id="toggle" onClick="toggleBulb()">On_bulb</button>
+
+    <script>
+        const on=()=>
+        {
+            let obj=document.getElementById("bulb");
+            obj.setAttribute("src","https://img.freepik.com/free-vector/light-bulb-realistic_1284-4662.jpg");
+        }
+        const off=()=>
+        {
+            let obj=document.getElementById("bulb");
+            obj.setAttribute("src","https://www.freeiconspng.com/uploads/bulb-off-icon-14.jpg");
+        }
+        const toggleBulb=()=>{
+            let img_obj=document.getElementById("bulb");
+            let srcValue=img_obj.getAttribute("src");
+            let btn_obj=document.getElementById("toggle");
+            let btn_text=btn_obj.innerHTML;
+            if(srcValue=="https://img.freepik.com/free-vector/light-bulb-realistic_1284-4662.jpg")
+            {
+                on();
+                btn_obj.innerHTML="Of_bulb";
+            }
+            else
+            {
+                off();
+                btn_obj.innerHTML="On_bulb";
+            }
+        }
+        
+    </script>
+</body>
+</html>

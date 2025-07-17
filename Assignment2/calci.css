@@ -1,0 +1,17 @@
+.cont{
+    display:block;
+    border: 1px solid black;
+}
+.first{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border:1px solid black;
+    align-items: center;
+}
+.one{
+    color:black;
+    border:1px solid black;
+    padding:5px;
+    margin: 1px;
+}
+
