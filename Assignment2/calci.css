@@ -4,6 +4,7 @@
     border: 1px solid black;
     width:fit-content;
     margin:auto;
+    padding:20px;
 }
 .zero{
     grid-column:span 3;
