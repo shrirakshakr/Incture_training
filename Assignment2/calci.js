@@ -1,24 +1,32 @@
-let Add = function(x,y)
-{
-    return x+y;
+// let Add = function(x,y)
+// {
+//     return x+y;
+// }
+
+// let Sub = function(x,y)
+// {
+//     return x-y;
+// }
+
+// let Multi = function(x,y)
+// {
+//     return x*y;
+// }
+
+// let Div = function(x,y)
+// {
+//     return x/y;
+// }
+const display = document.getElementById("display");
+
+function see(input){
+    display.value += input; 
 }
 
-let Sub = function(x,y)
-{
-    return x-y;
+function cal(){
+    display.value = eval(display.value);
 }
 
-let Multi = function(x,y)
-{
-    return x*y;
-}
-
-let Div = function(x,y)
-{
-    return x/y;
-}
-
-function click(y)
-{
-    
+function cleardis(){
+    display.value = "";
 }

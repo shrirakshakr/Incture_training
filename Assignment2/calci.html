@@ -7,34 +7,30 @@
     <link rel="stylesheet" href="calci.css">
 </head>
 <body>
-    <script src="calci.js"></script>
+    
     <div class="cont">
-        <div class="first">
-            <button onclick=""><div class="one">1</div></button>
-            <div class="one">2</div>
-            <div class="one">3</div>
-        </div>
-        <div class="first">
-            <div class="one">4</div>
-            <div class="one">5</div>
-            <div class="one">6</div>
-        </div>
-        <div class="first">
-            <div class="one">7</div>
-            <div class="one">8</div>
-            <div class="one">9</div>
-        </div>
-        <div class="first">
-            <div class="one">0</div>
-        </div>
-        <div class="first">
-            <div class="one">Add</div>
-            <div class="one">Sub</div>
-        </div>
-        <div class="first">
-            <div class="one">Multi</div>
-            <div class="one">Div</div>
-        </div>
+        <input type="text" id="display" readonly>
+        <button onclick="see('1')" class="one">1</button>
+        <button onclick="see('2')" class="one">2</button>
+        <button onclick="see('3')" class="one">3</button>
+        <button onclick="see('4')" class="one">4</button>
+        <button onclick="see('5')" class="one">5</button>
+        <button onclick="see('6')" class="one">6</button>
+        <button onclick="see('7')" class="one">7</button>
+        <button onclick="see('8')" class="one">8</button>
+        <button onclick="see('9')" class="one">9</button>
+        <button onclick="see('0')" class="one zero">0</button>
     </div>
+    <div class="cont f-col">
+        <button onclick="see('+')" class="one f-btn">Add</button>
+        <button onclick="see('-')" class="one f-btn">Sub</button>
+        <button onclick="see('*')" class="one f-btn">Multi</button>
+        <button onclick="see('/')" class="one f-btn">Div</button>
+    </div>
+    <div class="cont">
+        <button onclick="cal()" class="one zero">enter</button>
+        <button onclick="cleardis()" class="one zero">clear</button>
+    </div>
+    <script src="calci.js"></script>
 </body>
 </html>

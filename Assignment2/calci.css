@@ -1,17 +1,33 @@
 .cont{
-    display:block;
-    border: 1px solid black;
-}
-.first{
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    border:1px solid black;
-    align-items: center;
+    grid-template-columns: 80px 80px 80px;
+    border: 1px solid black;
+    width:fit-content;
+    margin:auto;
 }
+.zero{
+    grid-column:span 3;
+}
+.f-col{
+    grid-template-columns: repeat(4, 60px);
+}
+.f-btn {
+    grid-column: span 1;
+}
+
 .one{
     color:black;
     border:1px solid black;
     padding:5px;
     margin: 1px;
 }
+button:hover{
+    background-color: black;
+    color:white;
+}
+#display{
+    grid-column:span 3;
+    height:30px;
+}
+
 
