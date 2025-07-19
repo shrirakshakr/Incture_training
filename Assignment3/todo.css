@@ -1,4 +1,4 @@
-.cont{
+/* .cont{
     display:flex;
     flex-direction: column;
     color:black;
@@ -16,14 +16,71 @@
     height:30px;
 }
 #display{
-    height:30px;
-    width: 492px;
+    list-style-type: disc;
+    padding-left: 20px;
+    width: 100%;
 }
-#enter{
+#taskList{
     height:100px;
     width: 492px;
 }
 h1{
     align-content: center;
     padding:10px;
+} */
+
+
+
+
+.cont {
+  display: flex;
+  flex-direction: column;
+  color: black;
+  border: 2px solid black;
+  width: 500px;
+  margin: auto;
+  align-items: center;
+  padding: 20px;
 }
+
+.one {
+  color: black;
+  border: 1px solid black;
+  padding: 5px;
+  margin: 5px;
+  width: 100px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+}
+
+#display {
+  height: 30px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#taskList {
+  list-style-type:disc;
+  padding-left: 20px;
+  width: 100%;
+  border:1px solid black;
+  height:150px;
+  overflow-y: auto;
+}
+
+#taskList li {
+  text-align: left;
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+#taskList button{
+    margin-left: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
