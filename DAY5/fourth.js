@@ -89,19 +89,19 @@
 
 
 //-----------------------------MAP()--------------------------------------------
-// let emp = new Map();
-// emp.set("id","111");
-// emp.set("name","Ajay");
-// emp.set("city","Mangaluru");
-// console.log(emp.get("id"),emp.get("name"),emp.get("city"));
+let emp = new Map();
+emp.set("id","111");
+emp.set("name","Ajay");
+emp.set("city","Mangaluru");
+console.log(emp.get("id"),emp.get("name"),emp.get("city"));
 
 
 
 //-----------SET()--------------------------------------------
-let set = new Set();
-set.add(10);
-set.add(20);
-set.add(30);
-set.add(40);
-set.add(20);
-console.log(set);
+// let set = new Set();
+// set.add(10);
+// set.add(20);
+// set.add(30);
+// set.add(40);
+// set.add(20);
+// console.log(set);
