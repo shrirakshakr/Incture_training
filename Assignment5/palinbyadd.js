@@ -1,4 +1,15 @@
 function shortestPalindrome(s) {
+
+    //{
+// let b=s.rev();
+    // console.log(b);
+    // for(let i=0; i<s.length; i++)
+    // {
+    //     let temp=i;
+    //     let rev=0;
+    // }
+//}
+
     function isPalindrome(s, first, last) {
         while (first < last) {
             if (s[first] !== s[last]) {
@@ -10,9 +21,26 @@ function shortestPalindrome(s) {
         return true;
     }
 
+    // for(let i=1; i<=1000; i++)
+// {
+    // let temp=i;
+    // let rev=0;
+//     while(temp>0)
+//     {
+//         let rem=temp%10;
+//         rev=rev*10+rem;
+//         temp=Math.floor(temp/10);
+//     }
+//     if(i==rev)
+//     {
+//         console.log(i);
+//     }
+// }
+
+
     let n = s.length;
     let maxpalin = 0;
-    let result = "";
+    
 
     for (let i = n - 1; i >= 0; i--) {
         if (isPalindrome(s, 0, i)) {
@@ -20,6 +48,7 @@ function shortestPalindrome(s) {
             break;
         }
     }
+    let result = "";
 
     for (let i = n - 1; i > maxpalin; i--) {
         result += s[i];
@@ -29,10 +58,10 @@ function shortestPalindrome(s) {
         result += s[a];
     }
 
-    console.log(result);  // <-- this prints the final answer
+    console.log(result); 
 }
 
-shortestPalindrome("aacbcaaa");  // should print: aacabccaaa
+shortestPalindrome("aacbcaaa");  
 
 
 
@@ -52,28 +81,5 @@ shortestPalindrome("aacbcaaa");  // should print: aacabccaaa
     // console.log(a);
 
 
-// for(let i=1; i<=1000; i++)
-// {
-    // let temp=i;
-    // let rev=0;
-//     while(temp>0)
-//     {
-//         let rem=temp%10;
-//         rev=rev*10+rem;
-//         temp=Math.floor(temp/10);
-//     }
-//     if(i==rev)
-//     {
-//         console.log(i);
-//     }
-// }
 
-//{
-// let b=s.rev();
-    // console.log(b);
-    // for(let i=0; i<s.length; i++)
-    // {
-    //     let temp=i;
-    //     let rev=0;
-    // }
-//}
+
