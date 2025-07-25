@@ -1,9 +1,9 @@
 import LifeCycleFirst from "./components/LifeCycleFirst"
-function App() {
 
+function App() {
   return (
     <LifeCycleFirst />
-  )
+  );
 }
 
-export default App
+export default App;

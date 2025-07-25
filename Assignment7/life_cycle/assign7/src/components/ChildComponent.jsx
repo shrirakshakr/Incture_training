@@ -1,43 +1,46 @@
 import React, {Component} from "react";
-class ChildComponent extends Component{
-    constructor(props){
+
+class ChildComponent extends Component {
+    constructor(props) {
         super(props);
-        this.state={
-            value:0
+        this.state = {
+            value: 0
         };
-        console.log("Constructor Called.....")
+        console.log("ChildComponent Constructor is called");
     }
-    componentDidMount(){
-        console.log("componentDidMount() called.....");
+
+    componentDidMount() {
+        console.log("ChildComponent did Mount");
     }
-    shouldComponentUpdate(nextProps,nextState){
-        console.log("shouldComponentUpdate() method called.....");
-        return true;
+
+    shouldComponentUpdate(nextProps, nextState) {
+        console.log("Should ChildComponent Update");
+        return nextState.value !== this.state.value;
+        // This allows update only when the counter changes
     }
-    componentDidUpdate(prevProps, prevState, snapshot){
-        console.log("componentDidUpdate() method called.....");
+
+    componentDidUpdate() {
+        console.log("ChildComponent Did Update");
     }
-    componentWillUnmount(){
-        console.log("Component Will Unmount. Clearing Interval.....");
-        clearInterval(this.interval);
+
+    componentWillUnmount() {
+        console.log("ChildComponent Will Unmount");
     }
-    render(){
-        return(
+
+    increment = () => {
+        this.setState((prevState) => ({
+            value: prevState.value + 1
+        }));
+    };
+
+    render() {
+        return (
             <div>
-                <h2>Counter : {this.state.value}</h2>
-                <button onClick={()=>this.setState({value:this.state.value+1})}>Increment</button>
+                <h2>Counter: {this.state.value}</h2>
+                <button onClick={this.increment}>Increment</button>
             </div>
-        )
+        );
     }
 }
+
 export default ChildComponent;
-
-
-
-
-// componentDidMount(){
-//         console.log("Timer Component Mounted.....");
-//         this.interval=setInterval(()=>{
-//             this.setState({seconds:this.state.seconds+1});
-//         },1000);
-//     }

@@ -1,60 +1,41 @@
 import React, {Component} from "react";
 import ChildComponent from "./ChildComponent";
-class LifeCycleFirst extends Component{
-    constructor(props)
-    {
+
+class LifeCycleFirst extends Component {
+    constructor(props) {
         super(props);
-        this.state={
-            count:0,
-            showCounter:true
+        this.state = {
+            showCounter: true,
+            appState: 0
         };
     }
-    toggleCounter=()=>{
-        this.setState({showCounter: !this.state.showCounter});
+
+    toggleCounter = () => {
+        this.setState({ showCounter: !this.state.showCounter });
     };
-    static getDerivedStateFromProps(props,state){
-        return null;
+
+    componentDidMount() {
+        // Update appState every 5 seconds
+        this.interval = setInterval(() => {
+            this.setState({ appState: this.state.appState + 1 });
+            console.log("appState updated to : ", this.state.appState);
+        }, 5000);
     }
-    render(){
-        console.log("Heading is rendered.....");
-        return(
+
+    componentWillUnmount() {
+        clearInterval(this.interval);
+    }
+
+    render() {
+        console.log("Heading and button rendered");
+        return (
             <div>
-                <h1>React Lifecycle Demo : </h1>
+                <h1>React Lifecycle Demo :</h1>
                 <button onClick={this.toggleCounter}>Toggle Child Component</button>
                 {this.state.showCounter && <ChildComponent />}
-                
             </div>
-        )
-    }
-    componentDidMount(){
+        );
     }
 }
+
 export default LifeCycleFirst;
-
-
-
-
-
-
-// import React, {Component} from "react";
-// import TimerComponent from "./TimerComponent";
-// class LifeCycleThird extends Component{
-//     constructor(){
-//         super();
-//         this.state={
-//             showTimer:true
-//         };
-//     }
-    // toggleTimer=()=>{
-    //     this.setState({showTimer: !this.state.showTimer});
-    // };
-//     render(){
-//         return(
-//             <div>
-                // <button onClick={this.toggleTimer}>Toggle Timer</button>
-                // {this.state.showTimer && <TimerComponent />}
-//             </div>
-//         )
-//     }
-// }
-// export default LifeCycleThird;
