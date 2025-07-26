@@ -15,7 +15,7 @@ class LifeCycleFirst extends Component {
     };
 
     componentDidMount() {
-        // Update appState every 5 seconds
+        // Updates appState for every 5 seconds
         this.interval = setInterval(() => {
             this.setState({ appState: this.state.appState + 1 });
             console.log("appState updated to : ", this.state.appState);
