@@ -1,0 +1,254 @@
+A component fetches remote data upon mounting and receives new props affecting its data source. Describe a robust pattern for handling both initial and subsequent fetches while preventing memory leaks.
+(1 Point)
+
+Use componentDidMount for initial fetch, componentDidUpdate for prop changes, handle cleanup in componentWillUnmount, and use a flag or AbortController to prevent setting state after unmounting.
+
+Use getDerivedStateFromProps for all fetching.
+
+Dispatch fetch in constructor, handle abort in render.
+
+Use only componentWillUnmount.
+2.Which static lifecycle method is used to synchronize state with props when a component receives new props?
+(1 Point)
+
+getSnapshotBeforeUpdate
+
+getDerivedStateFromProps
+
+componentDidUpdate
+
+componentWillUnmount
+3.Where should you bind class methods if needed?
+(1 Point)
+
+render method
+
+componentWillUnmount
+
+constructor
+
+componentDidUpdate
+4.Email
+Enter your answer
+5.What will cause render to be called again?
+(1 Point)
+
+Only state change
+
+Only props change
+
+Either state or props change
+
+Only constructor is called
+6.Which method is called just before the DOM is updated?
+(1 Point)
+
+getSnapshotBeforeUpdate
+
+componentWillUnmount
+
+componentDidMount
+
+render
+7.Which of the following lifecycle methods is invoked when an error is thrown in a descendant component?
+(1 Point)
+
+componentDidMount
+
+componentDidCatch
+
+getDerivedStateFromError
+
+Both b and c
+8.What argument does componentDidUpdate NOT receive?
+(1 Point)
+
+prevProps
+
+prevState
+
+snapshot
+
+nextProps
+9.Which method is suitable for fetching API data after initial render?
+(1 Point)
+
+componentWillUnmount
+
+componentDidUpdate
+
+componentDidMount
+
+shouldComponentUpdate
+10.Which method is deprecated and should not be used in modern React code (post v16.3)?
+(1 Point)
+
+componentWillMount
+
+componentDidMount
+
+componentDidUpdate
+
+constructor
+11.Which method can cause an infinite loop if setState is called inside it without a condition?
+(1 Point)
+
+componentWillUnmount
+
+componentDidUpdate
+
+render
+
+constructor
+12.Which lifecycle method is best for initiating animations after a DOM update?
+(1 Point)
+
+componentDidMount
+
+getDerivedStateFromProps
+
+componentDidUpdate
+
+constructor
+13.What does the shouldComponentUpdate method return?
+(1 Point)
+
+String
+
+Boolean
+
+Number
+
+Object
+14.Which method is invoked before the component is removed from the DOM?
+(1 Point)
+
+getDerivedStateFromProps
+
+componentWillUnmount
+
+shouldComponentUpdate
+
+componentDidUpdate
+15.Which method can be static in a class component?
+(1 Point)
+
+getDerivedStateFromProps
+
+componentWillUnmount
+
+shouldComponentUpdate
+
+render
+16.Name
+Enter your answer
+17.Which method cannot access this.props or this.state?
+(1 Point)
+
+render
+
+getDerivedStateFromProps
+
+componentDidUpdate
+
+componentWillUnmount
+18.In what scenario could getDerivedStateFromProps lead to redundant or stale state, and how would you avoid it?
+(1 Point)
+
+When directly copying props to state; avoid by only updating state if props and state differ.
+
+When updating state every render; avoid by unmounting component.
+
+When using componentWillUnmount; avoid by using getSnapshotBeforeUpdate.
+
+When not binding methods; avoid by binding in constructor.
+19.What is the correct order of lifecycle methods when a component is mounted?
+(1 Point)
+
+render → constructor → componentDidMount
+
+constructor → render → componentDidMount
+
+componentDidMount → render → constructor
+
+constructor → componentDidMount → render
+20.What is called first, constructor or render?
+(1 Point)
+
+render
+
+constructor
+
+componentDidMount
+
+componentWillUnmount
+21.If you want to store the previous value of a prop before it changes, which pair of methods could you use?
+(1 Point)
+
+constructor and render
+
+getDerivedStateFromProps and componentWillUnmount
+
+getSnapshotBeforeUpdate and componentDidUpdate
+
+shouldComponentUpdate and render
+22.Which method is called after every render when the component's props or state change?
+(1 Point)
+
+componentWillUnmount
+
+componentDidUpdate
+
+getDerivedStateFromProps
+
+constructor
+23.Which lifecycle method allows you to read the DOM before changes are committed?
+(1 Point)
+
+getSnapshotBeforeUpdate
+
+getDerivedStateFromProps
+
+render
+
+shouldComponentUpdate
+24.Which method is used to perform clean-up in a React class component?
+(1 Point)
+
+componentDidMount
+
+componentWillUnmount
+
+shouldComponentUpdate
+
+getDerivedStateFromProps
+25.What happens if shouldComponentUpdate returns false after a props change?
+(1 Point)
+
+The component continues updating
+
+The component will still re-render
+
+The component does not re-render or call componentDidUpdate
+
+The component unmounts
+26.Which lifecycle method is called immediately after a component is mounted?
+(1 Point)
+
+componentWillUnmount
+
+componentDidMount
+
+componentDidUpdate
+
+render
+27.Which of the following methods is required in every class-based React component?
+(1 Point)
+
+componentDidMount
+
+constructor
+
+render
+
+componentWillUnmount
