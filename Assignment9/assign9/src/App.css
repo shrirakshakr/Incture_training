@@ -36,10 +36,7 @@ form {
   margin-bottom: 25px;
 }
 
-label {
-  font-weight: 600;
-  color: #cccccc;
-}
+
 
 input[type="text"] {
   align-items: center;
