@@ -1,0 +1,288 @@
+What is React Router primarily used for?
+(1 Point)
+
+ 
+
+Styling components
+
+Handling HTTP requests
+
+Managing navigation and routing in a React app
+
+Managing state in Redux
+2.Which package needs to be installed to use React Router in a project?
+(1 Point)
+
+ 
+
+react-navigation
+
+react-router-dom
+
+react-router-core
+
+react-dom-router
+3.Which component is used to define the routes in React Router v6?
+(1 Point)
+
+ 
+
+<RouteList>
+
+<BrowserRouter>
+
+<Routes>
+
+<Navigation>
+4.What does <Route path="/about" element={<About />} /> do?
+(1 Point)
+
+ 
+
+Redirects to the homepage
+
+Renders <About /> when the path is /about
+
+Deletes the About page
+
+Adds a link to the About page
+5.Which component should wrap the entire application to enable routing?
+(1 Point)
+
+ 
+
+<Link>
+
+<Navigate>
+
+<RouterProvider>
+
+<BrowserRouter>
+6.Which component is used to navigate to another route without reloading the page?
+(1 Point)
+
+ 
+
+<a href="/contact">
+
+<nav>
+
+<Link to="/contact">
+
+<Button>
+7.What is the main difference between <Link> and <NavLink>?
+(1 Point)
+
+ 
+
+<NavLink> can apply active styles
+
+<Link> allows animations
+
+<NavLink> is for external links only
+
+No difference
+8.Which hook is used to programmatically navigate between routes?
+(1 Point)
+
+ 
+
+useParams()
+
+useHistory()
+
+useNavigate()
+
+useLocation()
+9.What does the element prop in the <Route> component accept?
+(1 Point)
+
+ 
+
+A string
+
+A component function
+
+A JSX element
+
+A number
+10.What does the * path signify in a route?
+(1 Point)
+
+ 
+
+Homepage
+
+Dynamic route
+
+Catch-all / 404 page
+
+External link
+11.What is the purpose of the useParams hook?
+(1 Point)
+
+ 
+
+To fetch query strings
+
+To get route parameters from the URL
+
+To create new routes dynamically
+
+To access Redux state
+12.Which of the following best describes nested routes in React Router v6?
+(1 Point)
+
+ 
+
+Multiple <Routes> in one file
+
+Routes that share layout or UI structure
+
+Routes that call APIs
+
+Routes inside hooks
+13.What does the replace prop do in the <Navigate /> component?
+(1 Point)
+
+ 
+
+Replaces text on the page
+
+Replaces history so back button skips the previous page
+
+Forces page refresh
+
+Replaces the component
+14.In nested routing, why must you include an <Outlet /> component in the parent route?
+(1 Point)
+
+ 
+
+To define route boundaries
+
+To apply animations
+
+To render the child route component inside the parent layout
+
+To trigger scroll restoration
+15.How would you create protected routes in React Router v6?
+(1 Point)
+
+ 
+
+By using <PrivateRoute> from the library
+
+By setting isProtected=true on <Route>
+
+By wrapping a <Route> with a custom component that checks authentication and uses <Navigate />
+
+By using requireAuth attribute
+16.What is the purpose of onChange in a React form element?
+(1 Point)
+
+ 
+
+To validate form
+
+To reset form
+
+To update the component state when input changes
+
+To reload the page
+17.Which hook is commonly used to manage the form input state in React?
+(1 Point)
+
+ 
+
+useEffect
+
+useInput
+
+useState
+
+useRef
+18.Which attribute is used to bind a form field's value to component state?
+(1 Point)
+
+ 
+
+bind
+
+model
+
+value
+
+content
+19.What will happen if the input value is controlled by React but no onChange handler is provided?
+(1 Point)
+
+ 
+
+Input will be editable
+
+Input will show default value
+
+Input will become read-only
+
+It will throw a syntax error
+20.How do you prevent the page from reloading when a form is submitted in React?
+(1 Point)
+
+ 
+
+Use <Link> instead of <form>
+
+Use return false
+
+Call event.preventDefault() in the submit handler
+
+Use stopSubmit()
+21.Which is the correct way to handle a checkbox in React?
+(1 Point)
+
+ 
+
+Use value and onClick
+
+Use checked and onChange
+
+Use selected and onSelect
+
+Use defaultChecked and onInput
+22.Which pattern is recommended when dealing with multiple form fields in a single object?
+(1 Point)
+
+ 
+
+Use multiple useState hooks
+
+Use useRef only
+
+Use one useState with object and update using name and value
+
+Use Redux for every input
+23.You want to build a dynamic form where fields can be added/removed and managed efficiently. What is the most scalable solution?
+(1 Point)
+
+ 
+
+Use multiple useState for each input
+
+Use useReducer or form libraries like Formik or React Hook Form
+
+Use HTML forms without React control
+
+Create one global state variable for all forms
+24.Which of the following is the best approach to implement reusable and scalable form validation in a large React application?
+(1 Point)
+
+ 
+
+Manually write validation logic in each component’s submit handler
+
+Use HTML5 input attributes like required and pattern only
+
+Create custom hooks or use libraries like Formik or React Hook Form with schema validation (e.g., Yup)
+
+Use setTimeout to debounce user input and display errors after delay
