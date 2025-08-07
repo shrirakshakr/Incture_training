@@ -1,0 +1,254 @@
+Redux follows which programming paradigm?
+(1 Point)
+
+OOP
+
+Procedural
+
+Functional
+
+Structural
+2.Which middleware is commonly used for handling asynchronous actions in Redux?
+(1 Point)
+
+Redux CSS
+
+Redux Logger
+
+Redux Thunk
+
+Redux Fetch
+3.Which of the following is true about reducers?
+(1 Point)
+
+They modify the original state directly
+
+They return a new state object
+
+They are called in JSX
+
+They run asynchronously
+4.What will happen if you dispatch an unknown action type in Redux?
+(1 Point)
+
+Redux throws an error
+
+Reducer returns null
+
+The state remains unchanged if the reducer has a default case
+
+Redux logs a warning but updates the state
+5.What is an action in Redux?
+(1 Point)
+
+A reducer function
+
+A function that updates the DOM
+
+An object that describes what happened
+
+A state container
+6.Which of these tools can you use to debug Redux state?
+(1 Point)
+
+Chrome DevTools
+
+React Profiler
+
+Redux DevTools Extension
+
+Redux Compiler
+7.Which property must an action object have?
+(1 Point)
+
+reducer
+
+type
+
+dispatch
+
+store
+8.Name
+Enter your answer
+9.Which of the following is NOT a core principle of Redux?
+(1 Point)
+
+Single source of truth
+
+State is read-only
+
+Changes are made with pure functions
+
+Multiple stores
+10.How many arguments does a reducer function receive?
+(1 Point)
+
+0
+
+1
+
+2
+
+3
+11.What is a reducer in Redux?
+(1 Point)
+
+Function that performs async operations
+
+Middleware component
+
+A pure function that returns the next state
+
+UI rendering function
+12.What is the main purpose of Redux?
+(1 Point)
+
+Handling routing
+
+Managing component lifecycle
+
+Centralized state management
+
+Styling components
+13.What is the role of the second argument in a reducer function?
+(1 Point)
+
+The new component
+
+The current state
+
+The action dispatched
+
+The initial state
+14.Which function is used to create a Redux store?
+(1 Point)
+
+createReducer()
+
+createState()
+
+createStore()
+
+createApp()
+15.How does Redux Thunk middleware change the behavior of dispatch()?
+(1 Point)
+
+Allows dispatch to return promises
+
+Allows dispatch to send arrays
+
+Allows dispatch to accept a function instead of an action
+
+Prevents dispatch from modifying state
+16.What hook is used in React Redux to get state from the store?
+(1 Point)
+
+useDispatch
+
+useState
+
+useReducer
+
+useSelector
+17.Email
+Enter your answer
+18.Where is the global application state stored in Redux?
+(1 Point)
+
+Component state
+
+useEffect
+
+Store
+
+useState
+19.Why is it important that reducers are pure functions?
+(1 Point)
+
+So they can access APIs
+
+To ensure predictable state updates and enable time travel debugging
+
+To store local variables
+
+To modify global state
+20.In which file is the Redux Provider component usually used?
+(1 Point)
+
+Inside every component
+
+Only in reducer file
+
+In the root component (e.g., App.js or index.js)
+
+It’s not needed
+21.What does combineReducers() do in Redux?
+(1 Point)
+
+Creates multiple stores
+
+Combines multiple components
+
+Combines multiple reducers into one
+
+Creates side effects
+22.What is the return type of useSelector()?
+(1 Point)
+
+An action
+
+A reducer
+
+The selected part of the state
+
+The dispatch function
+23.What happens if a reducer returns undefined?
+(1 Point)
+
+The app crashes
+
+Redux uses previous state
+
+Redux throws an error
+
+It sets state to null
+24.What does mapDispatchToProps help with in Redux (legacy usage)?
+(1 Point)
+
+Maps reducers to props
+
+Maps state to props
+
+Maps dispatch actions to props
+
+Maps context to props
+25.Why is it recommended to normalize nested data in Redux state?
+(1 Point)
+
+To use fewer reducers
+
+To increase the complexity of state
+
+To improve lookup performance and simplify updates
+
+To store data in a hierarchical structure
+26.What is the purpose of middleware in Redux?
+(1 Point)
+
+Managing component styles
+
+Handling side effects like async actions
+
+Validating JSX
+
+Creating components
+27.What does the dispatch() function do?
+(1 Point)
+
+Renders a component
+
+Registers a reducer
+
+Sends an action to the store
+
+Creates a new store

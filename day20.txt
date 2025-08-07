@@ -1,0 +1,26 @@
+ERROR BOUNDARY -->
+- it is special type of class component that catches a JS error anywhere in its child component error, it logs those errors and 
+displays a error instead of 
+-
+
+
+TYPESCRIPT  -->
+-it is a sibling of JS
+-where we have some rules for datas
+-npm create vite@latest typscript_app_day20 --template typescript
+-to find the bug at the early stage
+
+
+-to convert js into typescript 
+1. we have to rename all the jsx file into tsx
+2. then npm install i.e 
+----> "npm install -D typescript @react-native/typescript-config @types/jest @types/react @types/react-test-renderer"
+3. then a command that creates a file called tsconfig.json
+----> "npx tsc --init"
+4. do the changes in that file i.e remove all inside compilerOptions{} and paste the below
+    "target":"es5",
+    "jsx":"react-jsx",
+    "module":"esnext",
+    "moduleResolution":"node",
+    "strict":true
+5. Then just create the file and in main.tsx it imported as app.jsx change it and add !

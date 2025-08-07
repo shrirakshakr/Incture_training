@@ -69,6 +69,7 @@
 
 //----------------------------------------------------------------------------------------------------------------
 import FirstError from './error/FirstError'
+import Second from './error/Second'
 import './App.css'
 
 function App() {
@@ -76,6 +77,7 @@ function App() {
     <div>
       <h1>API Fetching in React :</h1>
       <FirstError name="Shriraksha" />
+      <Second />
     </div>
   )
 }
